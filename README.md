@@ -1,10 +1,3 @@
----
-title: "Moore genome citation tracker"
-author: "Chris Stubben"
-output: html_document
----
-
-
 
 
 The `rMoore` package is a wrapper to the [euPMC](https://github.com/cstubben/euPMC) package and finds publications mentioning a genome project funded by the Gordon and Betty Moore Moore Foundation.  The main function `citations` requires a Moore project table with three columns containing valid Europe PMC search [queries](https://europepmc.org/Help#directsearch).  An example table from [GBMF521](https://www.moore.org/grants/list/GBMF521) is included in the package or you can load one using `read.xls` in the `gdata` package. 
