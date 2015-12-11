@@ -122,7 +122,7 @@ setwd("path/to/DT")
 write_pubs(mg2)
 ```
 
-Finally, `plot_pubs` creates a  `xts` object and plots an interactive dygraphs (best viewed in RStudio).  In this example, only the genome citations from 87 projects are plotted.
+Finally, `plot_pubs` creates a  `xts` object and plots an interactive dygraph (best viewed in RStudio).  In this example, only the genome citations from 87 projects are plotted.
 
 
 ```r
