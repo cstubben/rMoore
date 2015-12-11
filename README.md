@@ -33,7 +33,7 @@ keywords     "((Algoriphagus machipongonensis PR1) OR (Algoriphagus sp. PR1)) ge
 accs         "AAXU0* OR CM001023 OR NZ_CM001023"                                     
 ```
 
-The `cites`, `keywords` and `accs` columns contain search queries for Europe PMC and are usually generated automatically by using Excel functions.  If needed, these can be replaced by specific queries to narrow or broaden searches.
+The `cites`, `keywords` and `accs` columns are usually generated automatically by using Excel functions.  If needed, these can be replaced by specific queries to narrow or broaden searches.
 
 ```
 =IF(G6="", "", CONCATENATE("cites:", G6, "_MED"))
