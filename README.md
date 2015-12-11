@@ -1,12 +1,3 @@
----
-title: "Moore genome citation tracker"
-author: "Chris Stubben"
-output: html_document
----
-
-
-
-
 The `rMoore` package is a wrapper to the [euPMC](https://github.com/cstubben/euPMC) package and finds publications mentioning a genome project funded by the Gordon and Betty Moore Moore Foundation.  The main function `citations` requires a Moore project table with three columns containing valid Europe PMC search [queries](https://europepmc.org/Help#directsearch).  An example table from [GBMF521](https://www.moore.org/grants/list/GBMF521) is included in the package or you can load one using `read.xls` in the `gdata` package. 
 
 
@@ -21,10 +12,7 @@ The project table should contain a bioproject title, ID, accessions, PubMed ID o
 
 ```r
 t(mg[5,])
-```
-
-```
-             5                                                                       
+                                                                    
 Project      "Algoriphagus machipongonensis PR1"                                     
 ID           "PRJNA18947"                                                            
 WGS          "AAXU"                                                                  
@@ -74,19 +62,12 @@ Searching ABHC0*
 
 ```r
 sapply(x, nrow)
-```
-
-```
 Algoriphagus machipongonensis PR1      alpha proteobacterium BAL199 
                                27                                12 
 ```
 
 ```r
 table(x[[1]]$search)
-```
-
-```
-
 *KA   G  GK   K  KA 
   1   3   4  18   1 
 ```
@@ -103,35 +84,18 @@ Five additional functions work with the list of data.frames from the `citations`
 
 ```r
 x1 <- combine_pubs(mg2)
-```
-
-```
-5606 rows
-```
-
-```r
+#5606 rows
 x2 <- unique_pubs(mg2)
-```
-
-```
-2370 rows
-```
-
-```r
+#2370 rows
 x4 <- unique_pubs(mg2, "A")
-```
-
-```
-174 rows
+#174 rows
 ```
 `summary_pubs` counts the number of citations by genome, keyword and accession.  Since papers may be found by multiple searches, the total citations may be less than the sum of the last three columns.
 
 
 ```r
 summary_pubs(mg2, mg)[1:7,]
-```
 
-```
                             Project Citations Genome Keywords Accessions
 1      Acaryochloris sp. CCMEE 5410        15      9        7          1
 2      Aciduliprofundum boonei T469        27      9       18          0
