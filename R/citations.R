@@ -68,7 +68,9 @@ citations <- function( mg, year=2004){
         }else{
            pubs[[i]] <- data.frame()    #empty data.frame or leave null?
         }
-      }
+     }else{
+         pubs[[i]] <- data.frame()
+     }
      # Sys.sleep(sample(1:3, 1))  # not sure how many queries/second are allowed at Europe PMC?
    }
    #if(length(pubs)==1) pubs <- pubs[[1]]
