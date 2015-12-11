@@ -1,3 +1,7 @@
 import("plyr")
 import("euPMC")
+import("DT")
+import("dygraphs")
+importFrom("xts", "as.xts")
+importFrom("htmltools", "tags")
 exportPattern("^[[:alpha:]]+")

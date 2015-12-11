@@ -1,6 +1,6 @@
 
 
-The `rMoore` package is a wrapper to the [euPMC](https://github.com/cstubben/euPMC) package and finds publications mentioning a genome project funded by the Gordon and Betty Moore Foundation.  The main function `citations` requires a Moore project table with three columns containing valid Europe PMC search [queries](https://europepmc.org/Help#directsearch).  An example table from [GBMF521](https://www.moore.org/grants/list/GBMF521) is included in the package or you can load one using `read.xls` in the `gdata` package. 
+The `rMoore` package is a wrapper to the [euPMC](https://github.com/cstubben/euPMC) package and finds publications mentioning a genome project funded by the Gordon and Betty Moore Moore Foundation.  The main function `citations` requires a Moore project table with three columns containing valid Europe PMC search [queries](https://europepmc.org/Help#directsearch).  An example table from [GBMF521](https://www.moore.org/grants/list/GBMF521) is included in the package or you can load one using `read.xls` in the `gdata` package. 
 
 
 
@@ -91,7 +91,7 @@ This code returns all 177 project citations.
 mg2 <- citations(mg)
 ```
 
-Additional functions will be included to output publications lists with the search criteria,  write summary tables to Excel or Javascript datatables, group publications by project or create large `xts` objects for plotting dygraphs.
+Five additional functions work with the list of data.frames from the `citations` output above including `combine_pubs`, `unique_pubs`, `summary_pubs`, `plot_pubs` and `write_pubs`. 
 
 
 

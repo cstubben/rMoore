@@ -5,8 +5,8 @@ Version: 1.0
 Date: 2015-12-08
 Author: Chris Stubben
 Maintainer: Chris Stubben <stubben@lanl.gov>
-Depends: euPMC, plyr
+Depends: euPMC, plyr, DT, dygraphs, xts, htmltools
 License: GPL-3
 Description: tools for tracking citations of genome projects funded by the Gordon and Betty Moore foundation
 NeedsCompilation: no
-Packaged: 2015-12-10 15:57:24 UTC; Chris
+Packaged: 2015-12-11 19:35:17 UTC; Chris
